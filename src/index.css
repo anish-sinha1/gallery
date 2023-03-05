@@ -10,10 +10,12 @@
   --redwood: #995c51;
   --off-white: #f0f0f0;
   --cool-dark-blue: #0c1232;
-  --pastel-blue: #6792ac;
+  --pastel-blue: rgba(103, 146, 172, 0.8);
   --blush-pink: #e8c7c8;
   --tan: #e8d7c7;
   --light-pink: #e8c7d9;
+  --peacoat: #2b2e43;
+  --matte-red: rgba(179, 63, 64, 0.8);
 }
 
 body {
@@ -23,9 +25,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.1rem;
   background-color: var(--off-white);
-  background-image: url("https://storage.googleapis.com/anish-assets/diego-ph-tIL1v1jSoaY-unsplash.jpg");
+  /* background-image: url("https://storage.googleapis.com/anish-assets/diego-ph-tIL1v1jSoaY-unsplash.jpg");
+  background-image: url("https://storage.googleapis.com/anish-assets/ocean_background.jpg"); */
+  /* background-image: url("https://storage.googleapis.com/anish-assets/beach_background.jpg"); */
+  /* background-image: url("https://storage.googleapis.com/anish-assets/jakub-kriz-4r_tHA3gsUY-unsplash.jpg"); */
+  /* background-color: linear-gradient */
+  background: linear-gradient(
+    var(--matte-red),
+    var(--pastel-blue) 35% 55%,
+    var(--matte-red)
+  );
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
+}
+
+a {
+  /* text-decoration: none; */
+  color: var(--off-white);
+}
+
+a:hover {
+  color: var(--matte-red);
+  transition: all 0.2s ease-in;
 }
 
 code {
@@ -51,16 +72,16 @@ code {
   width: 75%;
   margin: 0 auto;
   padding: 2rem;
-  margin-top: 2rem;
+  margin-top: 10rem;
   font-size: 1.5rem;
-  color: var(--cool-dark-blue);
+  color: var(--off-white);
   border-radius: 1rem;
   backdrop-filter: blur(5px);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
   backdrop-filter: blur(8px);
-  background-color: var(--off-white);
-  color: var(--pastel-blue);
+  background-color: transparent;
+  backdrop-filter: blur(8px);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
 
 .navbar {
@@ -74,7 +95,13 @@ code {
   font-size: 2rem;
   font-weight: 500;
   color: var(--off-white);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000000;
+  transition: all 0.2s ease-in;
+  backdrop-filter: blur(2px);
 }
 
 .navbar-name {
@@ -94,9 +121,9 @@ code {
   margin-top: 2rem;
   border-radius: 1rem;
   backdrop-filter: blur(8px);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
   margin-bottom: 10rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
 
 .gallery-title {
@@ -114,19 +141,26 @@ code {
   height: 13rem;
   cursor: pointer;
   margin: 2rem;
+  color: var(--off-white);
 }
 
 .gallery-card__title {
   position: absolute;
   z-index: 100000;
-  color: var(--off-white);
   font-size: 1.5rem;
   font-weight: 700;
-  margin: auto auto;
   left: 0;
   right: 0;
   top: 40%;
   text-align: center;
+  margin: 0 auto;
+  width: 85%;
+  display: none;
+}
+
+.gallery-card:hover {
+  transition: all 0.3s ease-in;
+  color: var(--peacoat);
 }
 
 .gallery-card__img {
@@ -135,5 +169,10 @@ code {
   height: 100%;
   object-fit: cover;
   border-radius: 1rem;
-  filter: brightness(0.7) hue-rotate(180deg);
+  filter: brightness(0.7) hue-rotate(310deg) blur(0.5px);
+}
+
+.gallery-card__img:hover {
+  transition: all 0.2s ease-in;
+  filter: brightness(1) hue-rotate(0);
 }
