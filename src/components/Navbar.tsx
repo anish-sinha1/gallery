@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
   return (
     <div className="navbar">
       <div className="navbar-name" onClick={() => navigate("/")}>
-        Anish Sinha
+        Home
       </div>
       <div className="navbar-about" onClick={() => navigate("/about")}>
         About

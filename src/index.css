@@ -78,6 +78,18 @@ code {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
 
+@media screen and (max-width: 650px) {
+  .landing {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .landing {
+    font-size: 1.1rem;
+  }
+}
+
 .navbar {
   width: 100%;
   height: 5rem;
@@ -157,6 +169,18 @@ code {
   }
   .gallery-title {
     grid-column: 1/3;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .gallery-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .gallery-title {
+    font-size: 0.8rem;
   }
 }
 
