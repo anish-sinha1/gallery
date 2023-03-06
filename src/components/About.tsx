@@ -21,11 +21,25 @@ const About = () => {
           </a>{" "}
           However, aside from my software engineering talents, I am an
           artist&#8212;specifically, a portrait artist. I'm self taught, and
-          never really took art lessons, but drawing faces always came naturally
-          to me. Most of what's on this page was created between the ages of
-          sixteen and nineteen, and maybe when work slows down a bit, I'll draw
-          some more. If I end up at UChicago &#40;&#40;: maybe I'll gain some
-          new inspiration too.
+          have never really taken art lessons, but drawing faces always came
+          naturally to me. Most of what's on this page was created between the
+          ages of sixteen and nineteen, and maybe when work slows down a bit,
+          I'll draw some more. If I end up at UChicago &#40;&#40;: maybe I'll
+          gain some new inspiration too.
+          <br />
+          <br />I really did make this entire portfolio website specifically for
+          my UChicago application! All the glass effects and blurs are
+          completely custom CSS, and the UI was handmade in TypeScript and
+          React.js. I used Google Cloud to deploy it and even put it behind
+          HTTPS. You can view the source code{" "}
+          <a
+            href="https://github.com/anish-sinha1/gallery"
+            target="_blank"
+            rel="noreferrer"
+          >
+            here
+          </a>
+          .
           <br />
           <br />
           <br />

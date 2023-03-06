@@ -38,7 +38,7 @@ const GalleryItem: React.FC = () => {
       title: "Patrick Dempsey",
       imgSrc: "https://storage.googleapis.com/anish-assets/patrick_dempsey.jpg",
       caption:
-        "When I was in high school, I jumped on the Grey's Anatomy bandwagon, even though I had absolutely no intention of becoming a doctor, and in that show, I loved Patrick Dempsey's character. He plays his role so well, and on a bunch of SNL skits with Jimmy Kimmel. I just thought he was cool, so I sketched him. The medium is colored pencil, and I'm particularly proud of the hair in this sketch. It looks properly wavy and curly like it does when he's playing Derek in Greys.",
+        "When I was in high school, I jumped on the Grey's Anatomy bandwagon, even though I had absolutely no intention of becoming a doctor (not that it's realistic anyway), and in that show, I loved Patrick Dempsey's character. He plays his role so well there, and also on a bunch of SNL skits with Jimmy Kimmel. I just thought he was cool, so I sketched him. The medium is colored pencil, and I'm particularly proud of the hair in this sketch. It looks properly wavy and curly like it does when he's playing Derek in Greys.",
     },
     seventh: {
       title: "Green Arrow",
