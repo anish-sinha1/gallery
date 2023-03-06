@@ -33,30 +33,37 @@ const Landing: React.FC = () => {
         <GalleryCard
           title="Neil Patrick Harris"
           imageSrc="https://storage.googleapis.com/anish-assets/neil_patrick_harris.jpg"
+          path="first"
         ></GalleryCard>
         <GalleryCard
           title="Eminem"
           imageSrc="https://storage.googleapis.com/anish-assets/eminem.jpg"
+          path="second"
         ></GalleryCard>
         <GalleryCard
-          title="Deadpool"
+          title="Ryan Reynolds"
           imageSrc="https://storage.googleapis.com/anish-assets/ryan_reynolds.jpg"
+          path="third"
         ></GalleryCard>
         <GalleryCard
           title="Conor McGregor"
           imageSrc="https://storage.googleapis.com/anish-assets/conor_mcgregor.jpg"
+          path="fourth"
         ></GalleryCard>
         <GalleryCard
           title="G-Eazy"
           imageSrc="https://storage.googleapis.com/anish-assets/g_eazy.jpg"
+          path="fifth"
         ></GalleryCard>
         <GalleryCard
           title="Derek Shepherd"
           imageSrc="https://storage.googleapis.com/anish-assets/patrick_dempsey.jpg"
+          path="sixth"
         ></GalleryCard>
         <GalleryCard
           title="Green Arrow"
           imageSrc="https://storage.googleapis.com/anish-assets/stephen_amell.jpg"
+          path="seventh"
         ></GalleryCard>
       </div>
     </>

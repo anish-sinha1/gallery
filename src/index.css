@@ -10,12 +10,12 @@
   --redwood: #995c51;
   --off-white: #f0f0f0;
   --cool-dark-blue: #0c1232;
-  --pastel-blue: rgba(103, 146, 172, 0.8);
+  --pastel-blue: rgba(103, 146, 172, 0.6);
   --blush-pink: #e8c7c8;
   --tan: #e8d7c7;
   --light-pink: #e8c7d9;
   --peacoat: #2b2e43;
-  --matte-red: rgba(179, 63, 64, 0.8);
+  --matte-red: rgba(179, 63, 64, 0.6);
 }
 
 body {
@@ -28,6 +28,9 @@ body {
     var(--pastel-blue) 35% 55%,
     var(--matte-red)
   );
+  /* background-image: url("https://storage.googleapis.com/anish-assets/jordan-steranka-2EwSP-3dlmg-unsplash.jpg");
+  object-fit: cover;
+  background-blend-mode: hard-light; */
 }
 
 a {
@@ -199,7 +202,6 @@ code {
 }
 
 .footer {
-  width: 100%;
   height: 5rem;
   background-color: transparent;
   display: grid;
@@ -210,7 +212,6 @@ code {
   color: var(--off-white);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
   top: 0;
-  width: 100%;
   z-index: 1000000;
   transition: all 0.2s ease-in;
   backdrop-filter: blur(2px);
@@ -222,4 +223,70 @@ code {
   justify-items: center;
   margin-top: 10rem;
   margin-bottom: 10rem;
+}
+
+.item {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  backdrop-filter: blur(2px);
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  border-radius: 2rem;
+}
+
+.item-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--peacoat);
+  margin-top: 2rem;
+  /* border-radius: 1rem;
+  backdrop-filter: blur(2px);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
+}
+
+.item-img {
+  height: 120vh;
+  margin: 2rem;
+}
+
+.item-caption {
+  font-size: 1.5rem;
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+.notfound {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  height: 100vh;
+  color: var(--peacoat);
+}
+
+.backhome {
+  border: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+  margin-top: 5rem;
+  background-color: var(--peacoat);
+  color: var(--off-white);
+}
+
+.backhome:hover {
+  background-color: var(--matte-red);
+  color: var(--off-white);
 }
