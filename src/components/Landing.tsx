@@ -8,10 +8,11 @@ const Landing: React.FC = () => {
       <div className="landing">
         Hey, my name is Anish, and this is my portfolio. I like to draw
         portraits, and I prefer simple pencil/colored pencil as my medium.
-        Please click on each picture to see more. <br /> <br /> I was seventeen
-        when I drew most of these, and the subject matter reflects the media I
-        consumed at the time. I drew singers, and actors mostly, and each
-        portrait has a story.
+        Please click on each card in the gallery to see more. <br /> <br /> I
+        was seventeen when I drew most of these, and the subject matter reflects
+        the media I consumed at the time. I drew singers, and actors mostly, and
+        each portrait has a story, ironically usually unrelated to the actual
+        subject matter.
         <br />
         <strong>
           If you're here from the University of Chicago admissions committee, I
