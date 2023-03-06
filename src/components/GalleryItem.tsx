@@ -53,13 +53,11 @@ const GalleryItem: React.FC = () => {
       <div className="item-title">
         <h1>{itemMetadata.title}</h1>
       </div>
-      <div>
-        <img
-          src={itemMetadata.imgSrc}
-          alt={itemMetadata.title}
-          className="item-img"
-        />
-      </div>
+      <img
+        src={itemMetadata.imgSrc}
+        alt={itemMetadata.title}
+        className="item-img"
+      />
       <div className="item-caption">{itemMetadata.caption}</div>
     </section>
   );
